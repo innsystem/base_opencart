@@ -1,0 +1,244 @@
+{{ header }}
+<div id="checkout-cart" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  {% if attention %}
+  <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ attention }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+  </div>
+  {% endif %}
+  {% if success %}
+  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+  </div>
+  {% endif %}
+  {% if error_warning %}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert"><i class="fa fa-exclamation-circle"></i> {{
+    error_warning }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+  </div>
+  {% endif %}
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
+    {% else %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+
+          <form action="{{ action }}" method="post" enctype="multipart/form-data">
+
+            <div class="cart-layout row">
+              <div class="col-12 col-md-6 col-lg-8">
+
+                  <div class="heading-page border-bottom pb-1 mb-3">
+                    <h1 class="display-6">{{ heading_title }}</h1>
+                    {% if weight %}<span class="badge badge-primary">({{ weight }})</span>{% endif %}
+                  </div>
+
+                  {% if cart_order_total < order_minimum %} <div class="alert alert-warning alert-dismissible">
+                  <i class="fa fa-exclamation-circle"></i>
+                  Seu carrinho não possuí o valor mínimo de R$ {{ order_minimum }}.
+                  <br>
+                  Adicione mais itens em seu carrinho.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"><i
+                      class="fa fa-times"></i></button>
+                  </div>
+                  {% endif %}
+
+                  <div class="row">
+                  <!-- new table -->
+                  {% set i = 0 %}
+                  {% for product in products %}
+                  {% set i = i + 1 %}
+                  <div
+                    class="product-layout product-grid col-6 col-12 col-sm-12 col-md-6 col-lg-4 {% if not product.stock %}product-not-stock{% endif %}">
+                    <div class="product-thumb transition">
+                      <picture class="d-block image py-3">
+                        {% if product.thumb %}
+                        <a href="{{ product.href }}">
+                          <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}"
+                            class="img-fluid">
+                        </a>
+                        {% endif %}
+                        <div class="badge-image d-flex flex-column">
+                          <div>
+                            <button type="button" data-toggle="tooltip" title="{{ button_remove }} Produto"
+                              class="btn btn-sm btn-danger" onclick="cart.remove('{{ product.cart_id }}');"><i
+                                class="fa fa-times-circle"></i></button>
+                          </div>
+                        </div>
+                      </picture>
+                    </div>
+                    <div class="product-caption">
+                      <h4>
+                        <a href="{{ product.href }}">
+                          {{ product.name }}</a>
+                      </h4>
+                      <div class="d-flex justify-content-center align-items-center py-1 px-2">
+                        <div class="price">
+                          <ul>
+                            <li class="price-current">
+                              <span class="text-dark">{{ product.quantity }}x</span> {{ product.price }}
+                            </li>
+                          </ul>
+                        </div><!-- end price -->
+                        <div class="box-add-quantity ms-1">
+                          <input type="hidden" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}"
+                            id="input-quantity{{i}}" size="1" min="1" class="form-control" />
+                          <span>
+                            <button type="button" class="btn btn-primary" id="plus{{i}}"><i
+                                class="fa fa-plus"></i></button>
+                            <button type="button" class="btn btn-primary" id="minus{{i}}"><i
+                                class="fa fa-minus"></i></button>
+                          </span>
+                        </div><!-- box-add-qauntity -->
+                      </div>
+                      <div class="price border-bottom pb-2 mb-2">
+                        <ul>
+                          <li class="price-total">{{ product.total }}</li>
+                        </ul>
+                      </div>
+
+                      <div class="box-info pb-3">
+                        <ul>
+                          {% if not product.stock %} <li><b>Estoque:</b> <span class="text-danger">Indisponível
+                              ***</span>
+                          </li> {% endif %}
+                          {% if product.reward %}<li>{{ product.reward }}</li>{% endif %}
+                          {% if product.recurring %}<li><b>{{ text_recurring_item }}</b> {{ product.recurring }}</li> {%
+                          endif %}
+                          <li><b>{{ column_model }}:</b> {{ product.model }}</li>
+                        </ul>
+                        {% if product.option %}
+                        <ul>
+                          {% for option in product.option %}
+                          <li><b>{{ option.name }}:</b> {{ option.value }}</li>
+                          {% endfor %}
+                        </ul>
+                        {% endif %}
+                      </div>
+
+
+
+                      <button type="submit" id="button-refresh{{i}}" data-toggle="tooltip" title="{{ button_update }}"
+                        class="btn btn-xs btn-primary d-none"><i class="fa fa-redo-alt"></i></button>
+                    </div>
+                  </div>
+                  <!-- criar um function -->
+                  <script>
+                    $("#plus{{i}}").click(function () {
+                      var newQty = +($("#input-quantity{{i}}").val()) + 1;
+                      $("#input-quantity{{i}}").val(newQty);
+                      $('#button-refresh{{i}}').trigger('click');
+                    });
+
+                    $("#minus{{i}}").click(function () {
+                      var newQty = +($("#input-quantity{{i}}").val()) - 1;
+                      if (newQty < 1) newQty = 1;
+                      $("#input-quantity{{i}}").val(newQty);
+                      $('#button-refresh{{i}}').trigger('click');
+                    });
+                  </script>
+                  {% endfor %}
+
+                  {% for voucher in vouchers %}
+                  <div class="card">
+                    <div class="card-body">
+                      <td></td>
+                      <td class="text-center">{{ voucher.description }}</td>
+                      <td class="text-center"></td>
+                      <td class="text-center">
+                        <div class="input-group btn-block" style="max-width: 200px;">
+                          <input type="text" name="" value="1" size="1" disabled="disabled" class="form-control" />
+                          <span class="input-group-btn">
+                            <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"
+                              onclick="voucher.remove('{{ voucher.key }}');"><i class="fa fa-times-circle"></i></button>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-center">{{ voucher.amount }}</td>
+                      <td class="text-center">{{ voucher.amount }}</td>
+                    </div>
+                  </div>
+                  {% endfor %}
+                  <!-- new table -->
+                </div><!-- end row -->
+              </div><!-- end col -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="cart-info fixcontent rounded border p-4 text-center">
+                  <div class="heading-page border-bottom pb-1 mb-3">
+                    <h2>Resumo do Carrinho</h2>
+                  </div>
+
+                  <ul class="list-group list-group-flush mb-3 border">
+                    {% for total in totals %}
+                    <li class="list-group-item"><b>{{ total.title }}:</b> <span class="text-thema text-right">{{
+                        total.text }}</li>
+                    {% endfor %}
+                  </ul>
+
+                  <div class="d-flex flex-column">
+                    {% if cart_order_total < order_minimum %} <a href="javascript:;" disabled
+                      class="btn btn-warning btn-lg">
+                      Adicione mais itens</a>
+                      {% else %}
+                      <a href="{{ checkout }}" class="btn btn-success-custom btn-block"><i class="fa fa-check"></i> {{
+                        button_go_checkout
+                        }}</a>
+                      {% endif %}
+
+                      <a href="{{ home }}" class="text-muted mt-3"><i class="fa fa-reply"></i> Continuar
+                        comprando</a>
+                  </div>
+
+                  <hr>
+
+                  {% if modules %}
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      {% for module in modules %}
+                      {{ module }}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  {% endif %}
+
+                </div><!-- card-info -->
+              </div><!-- end col -->
+
+        </div><!-- end cart-layout -->
+        </form>
+      </div><!-- col -->
+    </div><!-- row -->
+    {{ content_bottom }}
+  </div>
+  {{ column_right }}
+</div>
+</div>
+
+<script>
+  var fixmeTop = $('.fixcontent').offset().top;
+  $(window).scroll(function () {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+      $('.fixcontent').css({
+        position: 'sticky',
+        top: '2%',
+        left: '0'
+      });
+    } else {
+      $('.fixcontent').css({
+        position: 'static'
+      });
+    }
+  });
+</script>
+{{ footer }}

@@ -1,0 +1,330 @@
+<div class="box-newsletter">
+  <div class="container">
+    <div class="d-flex flex-column flex-sm-column flex-md-row align-items-center">
+      <div class="col-xs-12 col-md-8">
+        <h3><i class="fa fa-envelope-open-text"></i> Cadastre-se e receba nossas novidades! </h3>
+      </div><!-- -->
+
+      <div class="col-xs-12 col-md-4">
+        <div class="input-group mt-4 mt-sm-4 mt-md-0">
+          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="E-mail válido"
+            class="form-control">
+          <span class="input-group-btn">
+            <button type="submit" id="btnNewsletter" onclick="return subscribe();" class="btn btn-sm btn-thema"><i
+                class="fa fa-check"></i> Registrar</button>
+          </span>
+        </div>
+      </div><!-- -->
+    </div>
+    <div id="msgRetorno" class="hide"></div>
+  </div>
+</div>
+</main>
+
+<div class="footer-desktop">
+  <footer>
+    <div id="description" class="container">
+      <div class="row">
+        <div class="col-sm-3 hidden-xs">
+          <h5>Atendimento</h5>
+          <ul class="linksAtendimento mb-5">
+            <li>
+              <div><i class="fab fa-whatsapp"></i> <b>Telefone</b></div>
+              <span><a href="https://wa.me/55{{ telephoneLink }}">{{ telephone }}</a></span>
+            </li>
+            {% if cellphone %}
+            <li>
+              <div><i class="fas fa-phone"></i> <b>Celular</b></div>
+              <span><a href="https://wa.me/55{{ cellphoneLink }}">{{ cellphone }}</a></span>
+            </li>
+            {% endif %}
+            <li class="e-mail">
+              <div><i class="fa fa-comment"></i> <b>Atendimento E-mail</b></div>
+              <span><a href="mailto:{{ email_admin }}">{{ email_admin }}</a></span>
+            </li>
+            {% if hour_open %}
+            <li>
+              <div><i class="fas fa-clock"></i> <b>Horário de Atendimento</b></div>
+              <p>{{ hour_open|replace({ '/space/': '<br>' }) }}</p>
+            </li>
+            {% endif %}
+          </ul>
+          <h5>{{ text_information }}</h5>
+          <ul class="list-unstyled links-footer">
+            {% if informations %}
+            {% for information in informations %}
+            <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+            {% endfor %}
+            {% endif %}
+            <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 hidden-xs">
+          <h5>Categorias</h5>
+          {% if categories %}
+          <ul class="list-unstyled links-footer mb-5">
+            {% for category in categories %}
+            {% if category.children %}
+            <li class="dropdown">
+              <a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }} <span
+                  class="openMenu d-inline-block d-sm-inline-block d-md-none"><i
+                    class="fa fa-angle-down"></i></span></a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length /
+                  category.column|round(1, 'ceil')) %}
+                  <ul class="list-unstyled">
+                    {% for child in children %}
+                    <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  {% endfor %}
+                </div>
+                <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a>
+              </div>
+            </li>
+            {% else %}
+            <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          <h5>{{ text_account }}</h5>
+          <ul class="list-unstyled links-footer">
+            <li><a href="{{ account }}">{{ text_account }}</a></li>
+            <li><a href="{{ order }}">{{ text_order }}</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="row mb-4 pl-0">
+            {% if facebook_status and facebook_url|length %}
+            <div class="col-sm-8">
+              <h5>Siga nossa Página</h5>
+              <div id="fb-root"></div>
+              <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=1094654680570525&autoLogAppEvents=1"
+                nonce="i5qGv6BN"></script>
+              <div class="fb-page" data-href="{{ facebook_url }}" data-tabs="" data-width="" data-height=""
+                data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                data-show-facepile="true">
+                <blockquote cite="{{ facebook_url }}" class="fb-xfbml-parse-ignore"><a href="{{ facebook_url }}">{{ name
+                    }}</a></blockquote>
+              </div>
+            </div>
+            {% endif %}
+            <div class="col-sm-4">
+              <h5>Segurança</h5>
+              <div class="banner_pagamentos">
+                <ul>
+                  <li class=""><img src="_galerias/security/site_seguro_ssl.png" class="img-responsive"
+                      alt="Site Seguro por Certificado SSL"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h5>Formas de Pagamentos</h5>
+              <div class="banner_pagamentos">
+                <ul>
+                  <li class="hide"><img src="_galerias/payment/banco_brasil.png" class="img-responsive"
+                      alt="Banco do Brasil"></li>
+                  <li class="hide"><img src="_galerias/payment/bradesco.png" class="img-responsive" alt="Bradesco"></li>
+                  <li class="hide"><img src="_galerias/payment/caixa.png" class="img-responsive" alt="Caixa"></li>
+                  <li class="hide"><img src="_galerias/payment/itau.png" class="img-responsive" alt="Itau"></li>
+
+                  {% if payment_bank_transfer_status == 1%}
+                  <li class=""><img src="_galerias/payment/deposito.png" class="img-responsive" alt="Depósito Bancário">
+                  </li>
+                  {% endif %}
+
+                  {% if payment_pagseguro_lightbox_status == 1%}
+                  <li class=""><img src="_galerias/payment/pagseguro.png" class="img-responsive" alt="PagSeguro"></li>
+                  {% endif %}
+
+                  {% if payment_pp_standard_status == 1%}
+                  <li class=""><img src="_galerias/payment/paypal.png" class="img-responsive" alt="PayPal"></li>
+                  {% endif %}
+
+                  <li class="hide"><img src="_galerias/payment/boleto.png" class="img-responsive" alt="Boleto Bancário">
+                  </li>
+                  <li class="hide parcelamento"><img src="_galerias/payment/parcelamento_cartoes.png"
+                      class="img-responsive" alt="PayPal"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <h5>Formas de Envio</h5>
+              <div class="banner_pagamentos">
+                <ul>
+                  <li class=""><img src="_galerias/shipping/correios.png" class="img-responsive" alt="Correios"></li>
+                  <li class=""><img src="_galerias/shipping/pac.png" class="img-responsive" alt="PAC"></li>
+                  <li class=""><img src="_galerias/shipping/sedex.png" class="img-responsive" alt="SEDEX"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- col-6 -->
+      </div>
+    </div><!-- container -->
+    {% if facebook_status and facebook_url|length and instagram_status and instagram_url|length %}
+    <div class="bgsocial-midia">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <h5>Encontre-nos aqui</h5>
+            </div>
+            <div class="col-md-9">
+              <ul class="social-icons text-left">
+                {% if facebook_status and facebook_url|length %}
+                <li class="social-icons-facebook" data-toggle="tooltip" title="Facebook"><a href="{{ facebook_url }}"
+                    target="_Blank"><i class="fab fa-facebook"></i></a></li>
+                {% endif %}
+                {% if instagram_status and instagram_url|length %}
+                <li class="social-icons-instagram" data-toggle="tooltip" title="Instagram"><a
+                    href="https://instagram.com/{{ instagram_url }}" target="_Blank"><i
+                      class="fab fa-instagram"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- bgsocial-midia -->
+    {% endif %}
+    <div id="copyright" class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 pull-left">
+          <p>{{ endereco }}</p>
+          <p>{{ powered }}</p>
+        </div>
+        <div class="col-xs-12 col-sm-2 pull-right">
+          <a href="https://innsystem.com.br" target="_Blank" class="companyDeveloper"><b>Tecnologia:</b><br><img
+              src="_galerias/logoinnsystem.png" alt="InnSystem Inovação em Sistemas"></a>
+        </div>
+      </div>
+    </div><!-- container -->
+  </footer>
+</div>
+<div class="footer-mobile">
+  <footer>
+    <div class="d-flex">
+      <div class="flex-fill">
+        <a href="index.php?route=common/home">
+          <i class="fa fa-home"></i>
+        </a>
+      </div><!-- flex-fill -->
+      <div class="flex-fill">
+        <a href="javascript:;" class="btnToggleMenu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div><!-- flex-fill -->
+      <div class="flex-fill">
+        <a href="index.php?route=account/account">
+          <i class="fa fa-user"></i>
+        </a>
+      </div><!-- flex-fill -->
+      <div class="flex-fill">
+        <a href="index.php?route=checkout/cart" id="cart-footer">
+          <i class="fa fa-shopping-cart"></i>
+          <span id="cart-total">{{ text_items }}</span>
+        </a>
+      </div><!-- flex-fill -->
+    </div>
+  </footer>
+</div>
+{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+{% endfor %}
+
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+
+<script type="text/javascript">
+  function subscribe() {
+    var formNews = $('form[name="formNewsletter"]');
+    var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var email = $('#newsletter-email').val();
+    var cupom = "primeiracompra";
+    var cupom_value = "20% de Desconto";
+    var url_loja = "{{url_loja}}";
+    var mensagem = "Prontinho! <br> Você irá receber por e-mail nossas promoções e novidades.<br><br><small>* Caso deseja cancelar o <b>newsletter</b> basta responder o e-mail com o assunto <b>SAIR</b></small>";
+    // var mensagem = "Prontinho! <br> Agora você pode realizar sua primeira comprando usando o cupom para receber "+cupom_value+". <br><br> Escolha os produtos em nossa loja, adicione ao carrinho e use o cupom: <h2 style='margin:5px 0;'><b>"+cupom+"</b></h2> <br> Você irá receber por e-mail nossas promoções e novidades.<br><br><small>* Caso deseja cancelar o <b>newsletter</b> basta responder o e-mail com o assunto <b>SAIR</b></small>";
+    if (email != "") {
+      if (!emailpattern.test(email)) {
+        $("#msgRetorno").removeClass('hide').append("<div class='alert-dismissible alert alert-danger'>Utilize um e-mail válido! <button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='return closetAlert();'> <span aria-hidden='true'>&times;</span> </button></div>");
+        $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+        setTimeout(function () {
+          $("#msgRetorno").addClass('hide').empty();
+        }, 8000);
+
+        return false;
+      }
+      else {
+        $.ajax({
+          url: 'index.php?route=common/footer/newsletters',
+          type: 'post',
+          data: {
+            'email': email,
+            'mensagem': mensagem
+          },
+          dataType: 'json',
+          beforeSend: function () {
+            $('#btnNewsletter').html('Aguarde').attr('disabled', true);
+          },
+          success: function (json) {
+            if (json.result.status === 'existe') {
+              $("#msgRetorno").removeClass('hide').append("<div class='alert-dismissible alert alert-danger'>E-mail já Cadastrado, utilize outro e-mail válido <button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='return closetAlert();'> <span aria-hidden='true'>&times;</span> </button></div>");
+              $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+              setTimeout(function () {
+                $("#msgRetorno").addClass('hide').empty();
+              }, 8000);
+            } else if (json.result.status === 'falha') {
+              $("#msgRetorno").removeClass('hide').append("<div class='alert-dismissible alert alert-danger'>Não foi possível cadastrar. <button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='return closetAlert();'> <span aria-hidden='true'>&times;</span> </button></div>");
+              $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+              setTimeout(function () {
+                $("#msgRetorno").addClass('hide').empty();
+              }, 8000);
+            } else if (json.result.status === 'ok') {
+              $("#msgRetorno").removeClass('hide').append("<div class='alert-dismissible alert alert-success'>" + mensagem + " <button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='return closetAlert();'> <span aria-hidden='true'>&times;</span> </button></div>");
+              setTimeout(function () {
+                $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+                $("#msgRetorno").addClass('hide').empty();
+              }, 20000);
+            }
+          },
+          afterSend: function () {
+            $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+            setTimeout(function () {
+              $("#msgRetorno").addClass('hide').empty();
+            }, 8000);
+          }
+
+        });
+        return false;
+      }
+    }
+    else {
+
+      $('#btnNewsletter').html('Aguarde').attr('disabled', true);
+      $("#msgRetorno").removeClass('hide').append("<div class='alert-dismissible alert alert-warning'>E-mail é necessário<button type='button' class='close' data-dismiss='alert' aria-label='Close' onclick='return closetAlert();'> <span aria-hidden='true'>&times;</span> </button></div>");
+      $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+      setTimeout(function () {
+        $("#msgRetorno").addClass('hide').empty();
+      }, 8000);
+      $(email).focus();
+      return false;
+    }
+  }
+
+  function closetAlert() {
+    $("#msgRetorno").addClass('hide').empty();
+    $('#btnNewsletter').html('<i class="fa fa-check"></i> Registrar').attr('disabled', false);
+  }
+</script>
+</body>
+</html>

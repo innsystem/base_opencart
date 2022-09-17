@@ -1,0 +1,198 @@
+{{ header }}
+<div id="checkout-cart" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  {% if attention %}
+  <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ attention }}
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+  {% endif %}
+  {% if success %}
+  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+  {% endif %}
+  {% if error_warning %}
+  <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+  </div>
+  {% endif %}
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="heading-page">
+            <h3>{{ heading_title }}</h3>
+            {% if weight %}<span class="badge badge-primary">({{ weight }})</span>{% endif %}
+          </div>
+
+          {% if cart_order_total < order_minimum %}
+          <div class="alert alert-warning alert-dismissible">
+            <i class="fa fa-exclamation-circle"></i> 
+            Seu carrinho não possuí o valor mínimo de R$ {{ order_minimum }}. <br> Adicione mais itens em seu carrinho.
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+          </div>
+          {% endif %}
+
+          <form action="{{ action }}" method="post" enctype="multipart/form-data">
+            <div class="table-responsive table-cart">
+              <table class="table table-hover table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <td class="text-left" colspan="2" width="50%">{{ column_name }}</td>
+                    <td class="text-center">{{ column_price }}</td>
+                    <td class="text-center">{{ column_quantity }}</td>
+                    <td class="text-center">{{ column_total }}</td>
+                    <td class="text-center" width="10%">Excluir</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% set i = 0 %}
+                  {% for product in products %}
+                  {% set i = i + 1 %}                  
+                  <tr {% if not product.stock %} class="danger" {% endif %}>
+                    <td class="text-center">
+                      {% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a> {% endif %}
+                    </td>
+                    <td class="text-left">
+                      <ul>
+                        <li><a href="{{ product.href }}">{{ product.name }}</a></li>
+                        {% if not product.stock %} <li><b>Estoque:</b> <span class="text-danger">Indisponível ***</span></li> {% endif %}
+                        {% if product.reward %}<li>{{ product.reward }}</li>{% endif %}
+                        {% if product.recurring %}<li><b>{{ text_recurring_item }}</b> {{ product.recurring }}</li> {% endif %}
+                        <li><b>{{ column_model }}:</b> {{ product.model }}</li>
+                      </ul>
+                      {% if product.option %}
+                      <p><b>Opções</b></p>
+                      <ul>
+                        {% for option in product.option %}
+                        <li><b>{{ option.name }}:</b> {{ option.value }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}                       
+                    </td>
+                    <td class="text-center"><b class="cart-price">{{ product.price }}</b></td>
+                    <td class="text-center">
+                      <div class="box-add-quantity">
+                        <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" id="input-quantity{{i}}" size="1" min="1" class="form-control" />
+                        <span>
+                          <button type="button" class="btn btn-primary" id="minus{{i}}">-</button>
+                          <button type="button" class="btn btn-primary" id="plus{{i}}">+</button>
+                        </span>
+                      </div>
+                      <button type="submit" id="button-refresh{{i}}" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-xs btn-primary hide"><i class="fa fa-redo-alt"></i></button>
+                    </td>
+                    <td class="text-center"><b class="cart-price">{{ product.total }}</b></td>
+                    <td class="text-center"><button type="button" data-toggle="tooltip" title="{{ button_remove }} Produto" class="btn btn-xs btn-danger" onclick="cart.remove('{{ product.cart_id }}');"><i class="fa fa-times-circle"></i></button></td>
+                  </tr>
+                  <script>
+                  $("#plus{{i}}").click(function(){
+                    var newQty = +($("#input-quantity{{i}}").val()) + 1;
+                    $("#input-quantity{{i}}").val(newQty);
+                    $('#button-refresh{{i}}').trigger('click');
+                  });
+
+                  $("#minus{{i}}").click(function(){
+                    var newQty = +($("#input-quantity{{i}}").val()) - 1;
+                    if(newQty < 1)newQty = 1;
+                    $("#input-quantity{{i}}").val(newQty);
+                    $('#button-refresh{{i}}').trigger('click');
+                  });
+                  </script>
+                  {% endfor %}
+                  {% for voucher in vouchers %}
+                  <tr>
+                    <td></td>
+                    <td class="text-center">{{ voucher.description }}</td>
+                    <td class="text-center"></td>
+                    <td class="text-center"><div class="input-group btn-block" style="max-width: 200px;">
+                      <input type="text" name="" value="1" size="1" disabled="disabled" class="form-control" />
+                      <span class="input-group-btn">
+                        <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="voucher.remove('{{ voucher.key }}');"><i class="fa fa-times-circle"></i></button>
+                      </span></div></td>
+                      <td class="text-center">{{ voucher.amount }}</td>
+                      <td class="text-center">{{ voucher.amount }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      {% if modules %}
+                      <td colspan="4" style="background:#eee !important;">
+                        {% for module in modules %}
+                        {{ module }}
+                        {% endfor %} 
+                      </td>
+                      {% endif %} 
+
+                      <td colspan="2" style="background:#eee !important;">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <ul class="cart-resume">
+                              {% for total in totals %}
+                              <li><b>{{ total.title }}:</b> <span class="text-thema text-right">{{ total.text }}</li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+
+                </table>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-xs-12 col-md-7 pull-right text-right mt-5">
+                <a href="{{ home }}" class="btn btn-default btn-lg mr-2"><i class="fa fa-reply"></i> Continuar comprando</a>            
+                {% if cart_order_total < order_minimum %}
+                <a href="javascript:;" disabled class="btn btn-warning btn-lg">Adicione mais itens</a>
+                {% else %}
+                <a href="{{ checkout }}" class="btn btn-thema btn-lg"><i class="fa fa-check"></i> {{ button_go_checkout }}</a>            
+                {% endif %}
+              </div>
+            </div>
+          </div><!-- col -->
+        </div><!-- row -->
+        <div class="d-flex mt-5">
+          <div class="flex-fill">
+            <h5>Formas de Pagamentos</h5>
+            <div class="banner_pagamentos">
+              <ul>
+                <li class="hide"><img src="_galerias/payment/banco_brasil.png" class="img-responsive" alt="Banco do Brasil"></li>
+                <li class="hide"><img src="_galerias/payment/bradesco.png" class="img-responsive" alt="Bradesco"></li>
+                <li class="hide"><img src="_galerias/payment/caixa.png" class="img-responsive" alt="Caixa"></li>
+                <li class="hide"><img src="_galerias/payment/itau.png" class="img-responsive" alt="Itau"></li>
+                <li class=""><img src="_galerias/payment/deposito.png" class="img-responsive" alt="Depósito Bancário"></li>
+                <li class="hide"><img src="_galerias/payment/pagseguro.png" class="img-responsive" alt="PagSeguro"></li>
+                <li class=""><img src="_galerias/payment/paypal.png" class="img-responsive" alt="PayPal"></li>
+                <li class="hide"><img src="_galerias/payment/boleto.png" class="img-responsive" alt="Boleto Bancário"></li>
+                <li class="parcelamento"><img src="_galerias/payment/parcelamento_cartoes.png" class="img-responsive" alt="PayPal"></li>
+              </ul>
+            </div>
+          </div><!-- col-xs-12 col-md-8 -->
+          <div class="flex-fill">
+            <h5>Formas de Envio</h5>
+            <div class="banner_pagamentos">
+              <ul>
+                <li class=""><img src="_galerias/shipping/correios.png" class="img-responsive" alt="Correios"></li>
+                <li class=""><img src="_galerias/shipping/pac.png" class="img-responsive" alt="PAC"></li>
+                <li class=""><img src="_galerias/shipping/sedex.png" class="img-responsive" alt="SEDEX"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {{ content_bottom }}</div>
+        {{ column_right }}</div>
+      </div>
+      {{ footer }} 

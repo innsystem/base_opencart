@@ -1,0 +1,95 @@
+{{ header }}
+<div id="account-login" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
+    {% else %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <div class="d-flex justify-content-center text-center">
+        <div class="col-12 col-sm-12 col-md-6">
+          <div class="box-login">
+            <h2>{{ text_returning_customer }}</h2>
+            <p><strong>{{ text_i_am_returning_customer }}</strong></p>
+            <form action="{{ action }}" method="post" enctype="multipart/form-data">
+              <div class="form-floating mb-3">
+                <input type="email" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email"
+                  class="form-control" />
+                <label for="input-email">{{ entry_email }}</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" name="password" value="{{ password }}" placeholder="{{ entry_password }}"
+                  id="input-password" class="form-control" />
+                <label for="input-password">{{ entry_password }}</label>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <div><input type="submit" value="{{ button_login }}" class="btn btn-success-custom px-5" /></div>
+              </div>
+
+              <div class="mt-3">
+                <div><a href="{{ register }}">{{ button_register }}</a></div>
+                <a href="{{ forgotten }}" class="text-danger">{{ text_forgotten }}</a>
+              </div>
+              
+              <div class="py-2">
+                {% if success %}
+                <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
+                </div>
+                {% endif %}
+                {% if error_warning %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert"><i
+                    class="fa fa-exclamation-circle"></i> {{
+                  error_warning }}</div>
+                {% endif %}
+              </div>
+
+              {% if redirect %}
+              <input type="hidden" name="redirect" value="{{ redirect }}" />
+              {% endif %}
+
+            </form>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      {{ content_bottom }}
+    </div>
+    {{ column_right }}
+  </div>
+</div>
+
+<script>
+  
+</script>
+{{ footer }}

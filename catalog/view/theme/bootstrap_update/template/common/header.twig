@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="{{ direction }}" lang="{{ lang }}" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="{{ direction }}" lang="{{ lang }}">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+  <base href="{{ base }}" />
+  <!-- // add url image product to head -->
+  <meta name="robots" content="follow" />
+  <meta name="googlebot" content="index, follow, all" />
+  <meta name="language" content="pt-br" />
+  <meta name="revisit-after" content="3 days">
+  <meta name="rating" content="general" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  {% if fbMetas %}
+  {% for fbMeta in fbMetas %}
+  <meta property="og:image:url" content="{{ base }}image/{{ fbMeta.content }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  {% endfor %}
+  {% else %}
+  <meta property="og:image:url" content="{{ base }}_galerias/facebook.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  {% endif %}
+
+  {% if description %}
+  <meta name="description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
+  {% endif %}
+  <!-- // end: add url image product to head -->
+  {% if keywords %}
+  <meta name="keywords" content="{{ keywords }}" />
+  {% endif %}
+
+  <!-- include Boostrap v5.2 -->
+  <link href="catalog/view/javascript/bootstrap_5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="catalog/view/javascript/font-awesome/5.1/css/all.min.css" rel="stylesheet" />
+  <link href="catalog/view/theme/{{ theme }}/stylesheet/template_custom.css?{{random()}}" rel="stylesheet" />
+  <link href="catalog/view/theme/{{ theme }}/stylesheet/responsive.css?{{random()}}" rel="stylesheet" />
+
+  {% for style in styles %}
+  <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+  {% endfor %}
+  
+  <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="catalog/view/javascript/bootstrap_5/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  
+  
+  {% for script in scripts %}
+  <script src="{{ script }}" type="text/javascript"></script>
+  {% endfor %}
+
+  {% for link in links %}
+  <link href="{{ link.href }}" rel="{{ link.rel }}" />
+  {% endfor %}
+
+  {% for analytic in analytics %}
+  {{ analytic }}
+  {% endfor %}
+
+</head>
+
+<body class="{{ class }}">
+
+  <header id="desktop" class="p-3 text-bg-dark">
+    <div class="">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <div id="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          {% if logo %}
+          <a href="{{ home }}">
+            <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid" />
+          </a>
+          {% else %}
+          <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
+        </div><!-- end #logo -->
+
+        {{ menu }}
+
+        {{ cart }}
+
+        {{ search }}
+
+        <div class="text-end">
+          {% if logged %}
+          <a href="{{ account }}" class="btn btn-outline-light me-2"><span class="d-none d-sm-none d-md-block">{{ text_account }}</span><span class="d-md-none"><i class="fa fa-user"></i></span></a>
+          <a href="{{ logout }}" class="text-white"><i class="fas fa-sign-out-alt"></i></a>
+          {% else %}
+          <a href="{{ login }}" class="text-white"><i class="fa fa-user"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% if bfloat_status %}
+  <div class="headerbuttonsfloat d-none">
+    <ul>
+      <li><a href="javascript:;" data-toggle="tooltip" data-placement="right" title="Entre em Contato"><i
+            class="fa fa-comments"></i></a>
+        <ul>
+          {% if bfloat_whatsapp %}
+          <li><a href="https://wa.me/55{{ bfloat_whatsapp }}" target="_Blank" class="whatsapp" data-toggle="tooltip"
+              data-placement="right" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_facebook %}
+          <li><a href="https://facebook.com/{{ bfloat_facebook }}" target="_Blank" class="facebook"
+              data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_messenger %}
+          <li><a href="https://m.me/{{ bfloat_messenger }}" target="_Blank" class="facebook-messenger"
+              data-toggle="tooltip" data-placement="right" title="Messenger"><i
+                class="fab fa-facebook-messenger"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_instagram %}
+          <li><a href="https://instagram.com/{{ bfloat_instagram }}" target="_Blank" class="instagram"
+              data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_mail %}
+          <li><a href="mailto:{{ bfloat_mail }}" class="comment" data-toggle="tooltip" data-placement="right"
+              title="E-mail"><i class="fa fa-comment"></i></a></li>
+          {% endif %}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  {% endif %}
+
+  <main class="content_geral">

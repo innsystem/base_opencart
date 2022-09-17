@@ -1,0 +1,554 @@
+2022-09-10 17:17:53 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\free_checkout.php on line 18
+2022-09-10 17:17:53 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\total\voucher.php on line 54
+2022-09-10 17:18:47 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\free_checkout.php on line 18
+2022-09-10 17:18:47 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\total\voucher.php on line 54
+2022-09-10 17:21:47 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\free_checkout.php on line 18
+2022-09-10 17:21:47 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\total\voucher.php on line 54
+2022-09-10 17:35:07 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\pagseguro_lightbox.php on line 21
+2022-09-12 7:50:00 - PHP Warning:  unlink(C:/laragon/www/loja_base_nova/system/storage/cache/cache.currency.1662844250): No such file or directory in C:\laragon\www\loja_base_nova\system\library\cache\file.php on line 17
+2022-09-12 7:50:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_base_nova\catalog\model\extension\shipping\free.php on line 26
+2022-09-12 7:50:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_base_nova\catalog\model\extension\shipping\free.php on line 27
+2022-09-12 9:42:18 - PHP Notice:  Undefined variable: total in C:\laragon\www\loja_base_nova\catalog\controller\common\header.php on line 89
+2022-09-12 9:42:28 - PHP Notice:  Undefined variable: total in C:\laragon\www\loja_base_nova\catalog\controller\common\header.php on line 89
+2022-09-13 18:17:44 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 958
+2022-09-13 18:17:44 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1022
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1040
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1049
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1054
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1060
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1065
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1081
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1086
+2022-09-13 18:17:44 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1091
+2022-09-13 18:19:26 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 958
+2022-09-13 18:19:26 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1022
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1040
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1049
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1054
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1060
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1065
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1081
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1086
+2022-09-13 18:19:26 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1091
+2022-09-13 18:21:12 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 958
+2022-09-13 18:21:12 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1022
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1040
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1049
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1054
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1060
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1065
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1081
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1086
+2022-09-13 18:21:12 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1091
+2022-09-13 18:23:35 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 958
+2022-09-13 18:23:35 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1022
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1034
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1040
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1049
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1054
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1060
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1065
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1081
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1086
+2022-09-13 18:23:35 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\paypal_plus.php on line 1091
+2022-09-14 9:07:21 - PHP Notice:  Undefined index: order_id in C:\laragon\www\loja_base_nova\catalog\controller\extension\payment\bank_transfer.php on line 23
+2022-09-14 9:07:21 - PHP Notice:  Trying to access array offset on value of type bool in C:\laragon\www\loja_base_nova\catalog\controller\extension\total\voucher.php on line 54
+2022-09-14 15:17:02 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:17:02 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:17:02 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 132
+2022-09-14 15:17:02 - PHP Notice:  Undefined index: telephone in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 136
+2022-09-14 15:19:39 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:19:39 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:19:39 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 132
+2022-09-14 15:19:57 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:19:57 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 128
+2022-09-14 15:19:57 - PHP Notice:  Undefined index: email in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\register.php on line 132
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: firstname in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 113
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: lastname in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 117
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: address_1 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 121
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: city in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 125
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: country_id in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 131
+2022-09-15 13:01:29 - PHP Notice:  Undefined index: country_id in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_address.php on line 137
+2022-09-15 15:02:34 - PHP Notice:  Undefined index: comment in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 685
+2022-09-15 15:04:03 - PHP Warning:  SoapClient::SoapClient(http://services.frenet.com.br/logistics/ShippingQuoteWS.asmx?wsdl): failed to open stream: HTTP request failed! in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\shipping\frenet.php on line 98
+2022-09-15 15:04:03 - PHP Warning:  SoapClient::SoapClient(): I/O warning : failed to load external entity &quot;http://services.frenet.com.br/logistics/ShippingQuoteWS.asmx?wsdl&quot; in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\shipping\frenet.php on line 98
+2022-09-15 15:04:09 - PHP Warning:  SoapClient::SoapClient(http://services.frenet.com.br/logistics/ShippingQuoteWS.asmx?wsdl): failed to open stream: HTTP request failed! in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\shipping\frenet.php on line 98
+2022-09-15 15:04:09 - PHP Warning:  SoapClient::SoapClient(): I/O warning : failed to load external entity &quot;http://services.frenet.com.br/logistics/ShippingQuoteWS.asmx?wsdl&quot; in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\shipping\frenet.php on line 98
+2022-09-15 15:34:37 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 15:34:37 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 15:35:21 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 15:35:21 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 15:35:21 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 15:35:21 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 15:37:07 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 15:37:07 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 15:37:23 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 15:37:23 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:06:19 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 149
+2022-09-15 16:06:19 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 151
+2022-09-15 16:06:19 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 152
+2022-09-15 16:07:22 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 149
+2022-09-15 16:07:22 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 151
+2022-09-15 16:07:22 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 152
+2022-09-15 16:28:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:11 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:11 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:11 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:11 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:31 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:31 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:31 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:31 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:34 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:34 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:28:34 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:28:34 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:35:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:35:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:35:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:35:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:36:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:36:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:36:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:36:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:36:29 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:36:29 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:36:29 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:36:29 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:37:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:37:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:37:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:37:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:37:39 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:37:39 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:37:39 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:37:39 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:38:26 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:38:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:38:26 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:38:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:38:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:38:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:38:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:38:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:39:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:39:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:39:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:39:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:39:52 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:39:52 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:39:52 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:39:52 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:40:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:40:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:40:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:40:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:40:48 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:40:48 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:40:48 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:40:48 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:22 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:22 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:22 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:22 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:36 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:36 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:36 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:36 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:41:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:41:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:42:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:42:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:42:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:42:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:42:32 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:42:32 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:42:32 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:42:32 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:44:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:44:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 16:44:47 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 16:44:47 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'title' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 7
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 8
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 12
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:00:26 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'title' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 7
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 8
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 12
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:00:26 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'title' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 7
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 8
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 12
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:00:26 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:00:26 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'title' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 7
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 8
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 12
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'tax_class_id' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 13
+2022-09-15 17:02:27 - PHP Warning:  Illegal string offset 'cost' in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:02:27 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\shipping.php on line 24
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 475
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: terms in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 476
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: sort_order in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 477
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 444
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: cost in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 445
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: tax_class_id in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 446
+2022-09-15 17:02:30 - PHP Notice:  Undefined index: text in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 447
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 475
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: terms in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 476
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: sort_order in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 477
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 444
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: cost in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 445
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: tax_class_id in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 446
+2022-09-15 17:02:34 - PHP Notice:  Undefined index: text in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 447
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 475
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: terms in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 476
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: sort_order in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 477
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: title in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 444
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: cost in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 445
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: tax_class_id in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 446
+2022-09-15 17:02:52 - PHP Notice:  Undefined index: text in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\confirm.php on line 447
+2022-09-15 17:06:41 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:06:41 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:06:41 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:06:41 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:06:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:06:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:06:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:06:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:11:14 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 17:11:14 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:41:55 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:41:55 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 17:56:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:56:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 17:56:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 17:56:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:00:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:00:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:00:46 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:00:46 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:06:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:06:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:06:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:06:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:12:10 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:12:10 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:12:10 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:12:10 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:17:49 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:17:49 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 143
+2022-09-15 18:17:49 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:17:49 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 145
+2022-09-15 18:35:27 - PHP Notice:  Undefined index: payment_methods in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 222
+2022-09-15 18:35:27 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 222
+2022-09-15 18:37:08 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 148
+2022-09-15 18:37:08 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 151
+2022-09-15 18:37:08 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 153
+2022-09-15 18:37:16 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 148
+2022-09-15 18:37:16 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 151
+2022-09-15 18:37:16 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 153
+2022-09-15 18:37:26 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 148
+2022-09-15 18:37:26 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 151
+2022-09-15 18:37:26 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 153
+2022-09-15 18:39:01 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 141
+2022-09-15 18:39:40 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 146
+2022-09-15 18:39:40 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 148
+2022-09-15 18:39:40 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 150
+2022-09-15 18:39:41 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 146
+2022-09-15 18:39:41 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 148
+2022-09-15 18:39:41 - PHP Warning:  Illegal string offset 'code' in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 150
+2022-09-16 7:55:21 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 42
+2022-09-16 8:02:20 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 42
+2022-09-16 8:02:40 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 42
+2022-09-16 8:03:11 - PHP Notice:  Undefined offset: 0 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:04:24 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 42
+2022-09-16 8:05:18 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 37
+2022-09-16 8:05:30 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 37
+2022-09-16 8:05:57 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 37
+2022-09-16 8:06:52 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 37
+2022-09-16 8:06:52 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 39
+2022-09-16 8:06:52 - PHP Warning:  end() expects parameter 1 to be array, null given in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 40
+2022-09-16 8:07:06 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 39
+2022-09-16 8:07:06 - PHP Warning:  end() expects parameter 1 to be array, null given in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 40
+2022-09-16 8:11:02 - PHP Notice:  Undefined offset: 0 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:15:03 - PHP Notice:  Only variables should be passed by reference in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 46
+2022-09-16 8:15:56 - PHP Notice:  Undefined index: code in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:15:56 - PHP Notice:  Undefined index: code in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:16:34 - PHP Warning:  Illegal offset type in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:16:34 - PHP Warning:  Illegal offset type in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 43
+2022-09-16 8:21:02 - PHP Notice:  Undefined offset: 0 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 30
+2022-09-16 8:21:02 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 30
+2022-09-16 8:22:54 - PHP Notice:  Undefined index: frenet in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 21
+2022-09-16 8:22:54 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 21
+2022-09-16 8:23:35 - PHP Notice:  Undefined index: shipping_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 47
+2022-09-16 8:23:35 - PHP Notice:  Undefined offset: 1 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:35 - PHP Notice:  Undefined index:  in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:35 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:35 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:35 - PHP Notice:  Undefined index: comment in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 51
+2022-09-16 8:23:47 - PHP Notice:  Undefined index: shipping_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 47
+2022-09-16 8:23:47 - PHP Notice:  Undefined offset: 1 in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:47 - PHP Notice:  Undefined index:  in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:47 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:47 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 49
+2022-09-16 8:23:47 - PHP Notice:  Undefined index: comment in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 51
+2022-09-16 8:24:32 - PHP Notice:  Undefined index: frenet in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 23
+2022-09-16 8:24:32 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 23
+2022-09-16 8:25:16 - PHP Notice:  Undefined index: shipping_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 50
+2022-09-16 8:25:58 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 50
+2022-09-16 8:26:56 - PHP Notice:  Undefined index: comment in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\shipping_method.php on line 55
+2022-09-16 8:43:17 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 8:43:17 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 8:43:17 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 8:43:17 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 8:44:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 165
+2022-09-16 8:44:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 165
+2022-09-16 8:44:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 167
+2022-09-16 8:44:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 167
+2022-09-16 8:47:06 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:47:06 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:47:06 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:47:06 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:47:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:47:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:47:57 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:47:57 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:48:12 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:48:12 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:48:12 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:48:12 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:48:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:48:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:48:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:48:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:49:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:49:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:49:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:49:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:49:28 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 160
+2022-09-16 8:49:28 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 160
+2022-09-16 8:49:28 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:49:28 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:50:40 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 160
+2022-09-16 8:50:40 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 160
+2022-09-16 8:50:40 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:50:40 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:51:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:51:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 161
+2022-09-16 8:51:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:51:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 163
+2022-09-16 8:57:45 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:57:45 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 162
+2022-09-16 8:57:45 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 8:57:45 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:01 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:01 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:01 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:01 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:08 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:08 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:11 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:11 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 164
+2022-09-16 10:20:11 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:20:11 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:05 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:05 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:05 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:05 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:10 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:10 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:10 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:10 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:39 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:39 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:39 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:39 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:43 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:43 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 166
+2022-09-16 10:21:43 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:21:43 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 168
+2022-09-16 10:24:27 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:27 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:27 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:27 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:31 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:31 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:31 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:31 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:34 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:34 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:34 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:34 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:37 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:37 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:37 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:37 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:40 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:40 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:40 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:40 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:44 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:44 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:44 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:44 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:47 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:47 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:47 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:47 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:54 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:54 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:24:54 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:24:54 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:00 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:00 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:00 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:00 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:04 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:04 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:07 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:07 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:26 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 169
+2022-09-16 10:25:26 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:25:26 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:27:02 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:27:02 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:27:02 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:02 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:17 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:27:17 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 171
+2022-09-16 10:27:17 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:17 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:27:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:27:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:27:51 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:27:51 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:19 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:19 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:19 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:19 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:42 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:42 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:55 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:55 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:28:55 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:28:55 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:29:18 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:29:18 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:29:18 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:29:18 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:29:45 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:45 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:45 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:45 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:52 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:52 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:52 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:52 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:54 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:54 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:54 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:54 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:29:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:29:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:30:24 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:30:24 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:30:24 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:30:24 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:30:27 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:30:27 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:30:27 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:30:27 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:31:35 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 178
+2022-09-16 10:31:35 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 178
+2022-09-16 10:31:35 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 180
+2022-09-16 10:31:35 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 180
+2022-09-16 10:32:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:32:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 173
+2022-09-16 10:32:15 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:32:15 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 175
+2022-09-16 10:32:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:32:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:32:58 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:32:58 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:02 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:02 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:02 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:02 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:25 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:25 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:30 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:30 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 174
+2022-09-16 10:34:30 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-16 10:34:30 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 176
+2022-09-17 17:29:30 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 177
+2022-09-17 17:29:30 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 177
+2022-09-17 17:29:30 - PHP Notice:  Undefined index: payment_method in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 179
+2022-09-17 17:29:30 - PHP Notice:  Trying to access array offset on value of type null in C:\laragon\www\loja_desenvolvimento\system\storage\modification\catalog\controller\checkout\payment_method.php on line 179
+2022-09-17 17:32:35 - PHP Notice:  Trying to access array offset on value of type float in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 25
+2022-09-17 17:32:35 - PHP Warning:  Cannot use a scalar value as an array in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 27
+2022-09-17 17:32:35 - PHP Warning:  Cannot use a scalar value as an array in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 33
+2022-09-17 17:32:38 - PHP Notice:  Trying to access array offset on value of type float in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 25
+2022-09-17 17:32:38 - PHP Warning:  Cannot use a scalar value as an array in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 27
+2022-09-17 17:32:38 - PHP Warning:  Cannot use a scalar value as an array in C:\laragon\www\loja_desenvolvimento\catalog\model\extension\total\avista.php on line 33

@@ -1,0 +1,35 @@
+  {% if reviews %}
+  <div class="boxReviewsClients">
+    <div class="heading-page">
+      <h3 class="title">Avaliações do Produto ({{review_total}}) </h3>
+    </div>
+    <ul>
+      {% for review in reviews %}
+      <li class="col-xs-12 col-sm-4 col-md-3">
+<!--       <div class="image ">
+        <a href="_galerias/reviews/gshock_bernado.jpg" data-lightbox="example-1">
+          <img src="_galerias/reviews/gshock_bernado.jpg" alt="">
+        </a>
+      </div> -->
+      <div class="conteudo">
+        <div class="avatar"><img src="_galerias/avatares/{{ review.avatar }}.png" alt="{{ review.author }}"></div>
+
+        <div class="rating">
+          {% for i in 1..5 %}
+          {% if review.rating < i %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> {% endif %}
+          {% endfor %}
+        </div>
+
+        <h2>{{ review.author }}</h2>
+        <p>{{ review.text }}</p>
+
+        <span class="date">{{ review.date_added }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+<div class="row">
+  <div class="col-sm-6 text-left">{{ pagination }}</div>
+  <div class="col-sm-6 text-right">{{ results }}</div>
+</div>
+  {% endif %} 

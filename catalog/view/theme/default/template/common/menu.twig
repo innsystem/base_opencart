@@ -1,0 +1,346 @@
+{% if categories %}
+<nav id="menu" class="navbar">
+  <div class="container">
+    <div class="navbar-header"><span id="category" class="visible-xs">{{ text_category }}</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="{{ home }}"><span class="hidden-xs"><i class="fa fa-home"></i></span> <span class="visible-xs">Início</span></a></li>
+      <li class="dropdown megamenu-custom">
+        <a href="">Menu de Departamento</a>
+        <div class="dropdown-menu megamenu-custom">
+          <ul>
+            {% for category in categories %}
+            {% if category.children %}
+            <li class=""><a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }} <span class="openMenu d-inline-block d-sm-inline-block d-md-none"><i class="fa fa-angle-down"></i></span></a>
+              <div class="megamenu-custom-dropdown">
+                <div class="megamenu-custom-content">
+                  <h3><a href="{{ category.href }}">{{ category.name }}</a></h3>
+                  {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                  
+                  {% if category.column == '2' %}
+                  {% set boxSubCategory = 'col-sm-6' %}
+                  {% elseif category.column == '3' %}
+                  {% set boxSubCategory = 'col-sm-4' %}
+                  {% else %}
+                  {% set boxSubCategory = 'col-sm-12' %}
+                  {% endif %}
+
+
+                  <ul class="list-unstyled {{ boxSubCategory }}">
+                    {% for child in children %}
+                    <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  {% endfor %}
+                </div>
+                {% if category.image %}
+                <div class="megamenu-custom-imagem">
+                  <img src="image/{{ category.image }}" alt="{{ category.name }}" class="img-responsive">
+                </div>
+                {% endif %}
+
+                </li>
+                {% else %}
+                <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+
+          {% for category in categories %}
+          {% if category.children %}
+          <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle {% if category.visibleCategory == false %}hide{% endif %}" data-toggle="dropdown">{{ category.name }} <span class="openMenu d-inline-block d-sm-inline-block d-md-none"><i class="fa fa-angle-down"></i></span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+                <ul class="list-unstyled">
+                  {% for child in children %}
+                  <li><a href="{{ child.href }}" class="{% if child.visibleChildCategory == false %}hide{% endif %}">{{ child.name }}</a></li>
+                  {% endfor %}
+                </ul>
+                {% endfor %}</div>
+                <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a> </div>
+              </li>
+              {% else %}
+              <li><a href="{{ category.href }}" class="{% if category.visibleCategory == false %}hide{% endif %}">{{ category.name }}</a></li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <script>
+  $(function(){
+    $(".megamenu-custom").hover(
+      function(){
+                //Ao posicionar o cursor sobre a div
+                setTimeout(function(){
+                  $('body').addClass('megamenu-custom-body');
+                }, 200);
+              },
+              function(){
+                //Ao remover o cursor da div
+                setTimeout(function(){
+                  $('body').removeClass('megamenu-custom-body');
+                }, 200);
+              }
+              );
+  });
+  </script>
+
+  <style>
+   .megamenu-custom-body:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #0000004f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+  }
+  nav#menu {
+    border-radius: 0;
+    background: #092fa2;
+    border: 0;
+    margin:0;
+  }
+  nav#menu .nav > li > a {
+    padding: 15px 15px;
+    color: #FFF;
+    text-shadow: none;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    margin-left: -3px;
+  }
+  nav#menu .nav > li a ~ .dropdown-menu {
+    left: -3px;
+    padding: 0;
+  }
+  nav#menu .nav > li:hover > a,
+  nav#menu .nav > li > a:hover,
+  nav#menu .nav > li.open > a {
+    color: #FFF;
+    background: #1e8bb5;
+    border-bottom: 2px solid #157ba2;
+  }
+  #menu .dropdown-inner a {
+    min-width: 160px;
+    display: block;
+    padding: 9px 15px;
+    clear: both;
+    line-height: 20px;
+    border-bottom: 1px solid #F2F2F2;
+    color: #4d4d4d;
+    font-size: 13px;
+  }
+  #menu .dropdown-inner li:last-child a {
+    border-bottom: 0;
+  }
+  nav#menu .dropdown-inner li a:hover {
+    color: #FFFFFF;
+    background: #157ba2;
+  }
+  nav#menu .see-all{
+    color:#4d4d4d;
+  }
+  nav#menu .see-all:hover,
+  nav#menu .see-all:focus{
+    background: #157ba2 !important
+  }
+  @media (min-width: 768px){
+    .navbar-nav {
+      float: left;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+    .navbar-nav>li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  #menu .btn-navbar {
+    font-size: 15px;
+    font-stretch: expanded;
+    color: #00238c;
+    background: #FFF;
+    padding: 2px 18px;
+    float: right;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+
+#menu .btn-navbar:hover {
+    background: #F2F2f2;
+    color: #00238c;
+}
+  nav#menu .navbar-nav li.dropdown.megamenu-custom{
+    z-index: 999;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom > a {
+    width: 245px;
+  }
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom {
+    width: 245px;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 2px -1px 11px -1px rgba(0,0,0,.1);
+    box-shadow: 2px -1px 11px -1px rgba(0,0,0,.1);
+    z-index: 9999999999999;
+    position: absolute;
+  }
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a {
+    padding: 10px 15px;
+    float: none;
+    display: list-item;
+    color:#333;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li:hover > a{
+    background: #F2F2F2;
+    color:#333;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown {
+    position: absolute;
+    width:650px;
+    height:100%;
+    left: 245px;
+    border-left: 1px solid #DDD;
+    top: 0;
+    background: #F2F2F2;
+    padding: 0;
+    -webkit-box-shadow: 2px -1px 11px -1px rgba(0,0,0,.1);
+    box-shadow: 2px -1px 11px -1px rgba(0,0,0,.1);
+    z-index: 1;
+    display: none;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li:hover div.megamenu-custom-dropdown {
+    display: block;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li:hover div.megamenu-custom-dropdown::before {
+    content: '';
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.10407913165266103) 0%, rgba(0,0,0,0) 100%);
+    display: block;
+    position: absolute;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content {
+    width: calc(100% - 220px);
+    padding: 10px;
+    float: none;
+    display: inline-block;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content h3 a{
+    color: #333;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content h3 a:hover{
+    color: #a2300c;
+  }
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content ul li a{
+    color: #333;
+  }
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content ul li a:hover{
+    color: #a2300c;
+    background: none;
+  }
+
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-imagem {
+    width: 220px;
+    height:100%;
+    float: right;
+  }
+  
+  nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-imagem img{
+      height:100%;
+  }
+
+  @media (max-width: 1000px){
+    .navbar-nav{
+      text-align: left;
+    }
+    nav#menu .container{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar-nav > li:first-child {
+      display: none;
+    }
+
+  }
+
+  @media (max-width:930px){    
+    nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown{
+      width: 510px;
+    }
+    nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-content {
+        width: 100%;
+    }
+    nav#menu .navbar-nav li.dropdown.megamenu-custom a ~ div.dropdown-menu.megamenu-custom ul li a ~ div.megamenu-custom-dropdown .megamenu-custom-imagem {
+        display: none;
+    }
+    
+  }
+
+  @media (max-width: 767px){
+    nav#menu{
+      background-color: #092fa2;
+    }
+    nav#menu .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .navbar-nav > li:first-child {
+      display: block;
+    }
+    nav#menu .nav > li > a{
+      color:#FFF;
+      padding:10px 20px;
+    }
+    nav#menu .see-all{
+      color:#FFF;
+    }
+    nav#menu .dropdown-inner li a{
+      border-bottom: 1px solid #239ecd;
+      color: #FFF;
+    }
+    nav#menu .dropdown-inner li a:hover {
+      color: #FFFFFF;
+      background: #157ba2;
+    }
+    #menu .megamenu-custom {
+      display: none;
+    }
+    #menu .hide {
+      display: block !important;
+    }
+  }
+  </style>
+  
+      {% endif %} 

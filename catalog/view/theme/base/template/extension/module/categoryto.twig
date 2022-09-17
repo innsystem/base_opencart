@@ -1,0 +1,154 @@
+<div class="container">
+	<div class="module-general module-categoryto">
+		<div class="heading-page">
+			<h3>{{ heading_title }}</h3>
+		</div>
+		<div class="row">
+
+			{% if type %}
+				<div class="swiper-viewport">
+					<div id="banner{{ module }}" class="swiper-container">
+						<div class="swiper-wrapper">
+						{% endif %}
+
+						{% for product in products %}
+							{% if type %}
+								<div class="product-layout swiper-slide">
+								{% else %}
+									<div class="product-layout col-lg-3 col-md-3 col-sm-4 col-xs-6">
+									{% endif %}
+									<div class="product-thumb transition">
+										<div class="image">
+											{% if product.valor_desconto %}
+											<span class="badge badge-danger badge-desconto">{{product.valor_desconto}}%</span>
+											{% endif %}
+											<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive"/></a>
+											<button type="button" class="btn-wishlist" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">
+												<i class="fa fa-heart"></i>
+											</button>
+										</div>
+										<div class="caption">
+											<h4>
+												<a href="{{ product.href }}">{{ product.name }}</a>
+											</h4>
+											{% if product.price %}
+												{% if product.price == 'R$ 0,00' %}
+													<div class="price">
+														<ul>
+															<li>
+																<span class="price-current">
+																	<small>Sob-consulta</small>
+																</span>
+															</li>
+														</ul>
+													</div>
+												{% else %}
+													<div class="price">
+														<ul>
+															{% if not product.special %}
+																<li>
+																	<span class="price-current">{{ product.price }}</span>
+																</li>
+															{% else %}
+																<li>
+																	<span class="price-old">{{ product.price }}</span>
+																</li>
+																<li>
+																	<span class="price-new">{{ product.special }}</span>
+																</li>
+															{% endif %}
+														</ul>
+													</div>
+												{% endif %}
+											{% endif %}
+											{% if product.rating %}
+												<div class="rating">
+													{% for i in 1..5 %}
+														{% if product.rating < i %}
+															<span class="fa fa-stack">
+																<i class="fa fa-star-o fa-stack-2x"></i>
+															</span>
+														{% else %}
+															<span class="fa fa-stack">
+																<i class="fa fa-star fa-stack-2x"></i>
+																<i class="fa fa-star-o fa-stack-2x"></i>
+															</span>
+														{% endif %}
+													{% endfor %}
+													{% if product.rating %}
+														({{ product.rating }})
+													{% endif %}
+												</div>
+											{% endif %}
+											{% if not product.quantity %}
+												<div class="alert alert-danger alert-stock">Sem estoque</div>
+											{% endif %}
+											<div class="button-group">
+												<a href="{{ product.href }}">
+													<span class="">{{ button_conferir }}</span>
+												</a>
+											</div>
+											{% if not product.shipping %}
+											<div class="shipping-grid">
+												<img src="./_galerias/shipping/frete_gratis_gif.gif" alt="Frete Grátis"
+													class="img-responsive m-3">
+											</div>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+								<!-- product-layout -->
+							{% endfor %}
+							{% if type %}
+							</div>
+							<!-- swiper-wrappe -->
+						</div>
+						<!-- swiper-container -->
+						<div class="swiper-pagination slideshow{{ module }}"></div>
+						<div class="swiper-pager">
+							<div class="swiper-button-next categoryto-btn-next{{ module }}"></div>
+							<div class="swiper-button-prev categoryto-btn-prev{{ module }}"></div>
+						</div>
+						<!-- swiper-pager -->
+					</div>
+					<!-- swiper-viewport -->
+				{% endif %}
+
+			</div>
+			<!-- row -->
+		</div>
+		<!-- module -->
+	</div>
+	<!-- container -->
+
+{% if type %}
+<script type="text/javascript">
+<!--
+$('#banner{{ module }}').swiper({
+mode: 'horizontal',
+slidesPerView: 4,
+pagination: '.slideshow{{ module }}',
+paginationClickable: true,
+nextButton: '.random-btn-next{{ module }}',
+prevButton: '.random-btn-prev{{ module }}',
+// spaceBetween: 30,
+autoplay: {{ module }}00,
+autoplayDisableOnInteraction: true,
+loop: true,
+breakpoints: {
+350: {
+slidesPerView: 1
+},
+640: {
+slidesPerView: 2
+},
+768: {
+slidesPerView: 3
+},
+1024: {
+slidesPerView: 4
+}
+}
+});
+--></script>
+{% endif %}

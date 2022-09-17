@@ -1,0 +1,30 @@
+<div class="buttons">
+	<div class="pull-right">
+		<input type="button" value="{{ button_confirm }}" id="button-confirm" class="btn btn-success btn-block"
+			data-loading-text="{{ text_loading }}" />
+	</div>
+</div>
+<script type="text/javascript"><!--
+		$('#button-confirm').on('click', function () {
+			$('#button-confirm').prop('disabled', true);
+			$.ajax({
+				url: 'index.php?route=extension/payment/free_checkout/confirm',
+				dataType: 'json',
+				beforeSend: function () {
+					$('#button-confirm').button('loading');
+				},
+				complete: function () {
+					$('#button-confirm').button('reset');
+				},
+				success: function (json) {
+					if (json['redirect']) {
+						location = json['redirect'];
+					}
+				},
+				error: function (xhr, ajaxOptions, thrownError) {
+					$('#button-confirm').prop('disabled', false);
+					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				}
+			});
+		});
+//--></script>

@@ -1,0 +1,5 @@
+admin/config.php
+image/
+install/
+system/storage/
+config.php

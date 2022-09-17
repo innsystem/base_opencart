@@ -1,0 +1,43 @@
+{% if categories %}
+<nav id="menu" class="navbar">
+  <div class="container">
+    <!-- 
+    <div class="navbar-header"><span id="category" class="visible-xs">{{ text_category }}</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
+    collapse
+  -->
+  <div class="navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      {% for category in categories %}
+      {% if category.children %}
+      <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }} <span class="openMenu d-inline-block d-sm-inline-block d-md-none"><i class="fa fa-angle-down"></i></span></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+            <ul class="list-unstyled">
+              {% for child in children %}
+              <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endfor %}</div>
+            <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a> </div>
+          </li>
+          {% else %}
+          <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+
+        <hr class="visible-xs visible-sm invisible clearfix">
+
+        <p class="visible-xs visible-sm"><b>Links Rápidos</b></p>
+
+        <ul class="visible-xs visible-sm nav navbar-nav">
+          <li><a href="index.php?route=account/account">Minha Conta</a></li>
+          <li><a href="index.php?route=account/wishlist">Meus Favoritos</a></li>
+          <li><a href="index.php?route=checkout/checkout">Finalizar Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% endif %} 

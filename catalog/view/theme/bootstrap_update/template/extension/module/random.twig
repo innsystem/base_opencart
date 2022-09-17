@@ -1,0 +1,158 @@
+<div class="container">
+	<div class="module-general module-random py-3">
+		<div class="heading-page border-bottom pb-1 mb-3">
+			<h3>{{ heading_title }}</h3>
+		</div>
+		<div class="row">
+
+			{% if type %}
+			<div class="swiper-viewport">
+				<div id="banner{{ module }}" class="swiper-container">
+					<div class="swiper-wrapper">
+						{% endif %}
+
+						{% for product in products %}
+						{% if type %}
+						<div class="product-layout swiper-slide">
+							{% else %}
+							<div class="product-layout col-6 col-sm-4 col-lg-3 my-3">
+								{% endif %}
+
+								<div class="product-thumb transition">
+									<picture class="d-block image py-3">
+										{% if product.valor_desconto %}
+										<span
+											class="badge badge-danger badge-desconto">{{product.valor_desconto}}%</span>
+										{% endif %}
+										<a href="{{ product.href }}">
+											<img src="{{ product.thumb }}" alt="{{ product.name }}"
+												title="{{ product.name }}" class="img-fluid" />
+										</a>
+										<div class="badge-image d-flex flex-column">
+											<div>
+												<button type="button" class="btn-wishlist mb-2" data-toggle="tooltip"
+													title="{{ button_wishlist }}"
+													onclick="wishlist.add('{{ product.product_id }}');">
+													<i class="fa fa-heart"></i>
+												</button>
+											</div>
+
+											{% if not product.quantity %}
+											<div class="alert alert-danger alert-stock">Sem estoque</div>
+											{% endif %}
+
+											{% if not product.shipping %}
+											<div class="badge bg-dark">FRETE GRÁTIS</div>
+											{% endif %}
+
+											{% if product.special %}
+											<div class="badge bg-success mt-2">{{product.valor_desconto}}% OFF</div>
+											{% endif %}
+
+										</div>
+
+									</picture>
+								</div>
+								<div class="product-caption">
+									<h4>
+										<a href="{{ product.href }}">{{ product.name }}</a>
+									</h4>
+									{% if product.price %}
+									{% if product.price == 'R$ 0,00' %}
+									<div class="price">
+										<ul>
+											<li class="price-current">Sob-consulta</li>
+										</ul>
+									</div>
+									{% else %}
+									<div class="price">
+										<ul>
+											{% if not product.special %}
+											<li class="price-current">
+												{{ product.price }}
+											</li>
+											{% else %}
+											<li class="price-old">
+												{{ product.price }}
+											</li>
+											<li class="price-new">
+												{{ product.special }}
+											</li>
+											{% endif %}
+										</ul>
+									</div>
+									{% endif %}
+									{% endif %}
+									<div class="rating">
+										{% for i in 1..5 %}
+										{% if product.rating < i %} <i class="far fa-star"></i>
+											{% else %}
+											<i class="fas fa-star"></i>
+											{% endif %}
+											{% endfor %}
+											{% if product.rating %}
+											<span>({{ product.rating }})</span>
+											{% endif %}
+									</div>
+									<div class="button-cart d-none">
+										<a href="{{ product.href }}">
+											<span class="">{{ button_add_cart }}</span>
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<!-- product-layout -->
+							{% endfor %}
+							{% if type %}
+						</div>
+						<!-- swiper-wrappe -->
+					</div>
+					<!-- swiper-container -->
+					<div class="swiper-pagination slideshow{{ module }}"></div>
+					<div class="swiper-pager">
+						<div class="swiper-button-next random-btn-next{{ module }}"></div>
+						<div class="swiper-button-prev random-btn-prev{{ module }}"></div>
+					</div>
+					<!-- swiper-pager -->
+				</div>
+				<!-- swiper-viewport -->
+				{% endif %}
+
+			</div>
+			<!-- row -->
+		</div>
+		<!-- module -->
+	</div>
+</div>
+<!-- container -->
+
+{% if type %}
+<script type="text/javascript">
+	$('#banner{{ module }}').swiper({
+		mode: 'horizontal',
+		slidesPerView: 4,
+		pagination: '.slideshow{{ module }}',
+		paginationClickable: true,
+		nextButton: '.random-btn-next{{ module }}',
+		prevButton: '.random-btn-prev{{ module }}',
+		// spaceBetween: 30,
+		autoplay: {{ module }}00,
+		autoplayDisableOnInteraction: true,
+		loop: true,
+		breakpoints: {
+		350: {
+			slidesPerView: 1
+		},
+		640: {
+			slidesPerView: 2
+		},
+		768: {
+			slidesPerView: 3
+		},
+		1024: {
+			slidesPerView: 4
+		}
+	}
+});</script>
+{% endif %}

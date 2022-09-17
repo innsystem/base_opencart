@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pt-br" xml:lang="pt-br">
+    <head>
+        <title>Imprimir Etiqueta dos Correios</title>
+        <base href="{{ base }}" />
+        <link rel="stylesheet" type="text/css" href="../admin/view/javascript/etiqueta/style.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="../admin/view/javascript/etiqueta/codigo_de_barra.js"></script>  
+        <script type="text/javascript" src="../admin/view/javascript/etiqueta/funcao.js"></script>  
+    </head>
+    <body onload="updateBarcode()">
+        
+        {% for order in orders %}
+        <div id="print">
+            <table width="391" class="tabela1" cellpadding="14" cellspacing="0">
+                <tr>
+                    <td width="51%" valign="top">
+                        <table width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td align="botton"><img src="../admin/view/javascript/etiqueta/images/destinatario_peq.gif" border="0"></td>
+                                    <td align="right">                                    
+                                        {% if order['correios'] == 'correios.41106' or order['correios'] == 'frenet.04510' %}
+                                            <img src="../admin/view/javascript/etiqueta/images/chancela_pac.jpg">
+                                        {% elseif order['correios'] == 'correios.40010' or order['correios'] == 'frenet.04014' %}
+                                            <img src="../admin/view/javascript/etiqueta/images/chancela_sedex.jpg">
+                                        {% elseif order['correios'] == 'correios.40215' %}
+                                            <img src="../admin/view/javascript/etiqueta/images/chancela_sedex10.jpg">
+                                        {% elseif order['correios'] == 'pickup.pickup' %}
+                                            <img src="../admin/view/javascript/etiqueta/images/chancela_pickup.jpg">
+                                        {% elseif order['correios'] == 'flat.flat' or order['correios'] == 'free.free' %}
+                                            <img src="../admin/view/javascript/etiqueta/images/correios.gif">
+                                        {% endif %}
+									</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" height="150">
+                            <tbody>
+                                <tr>
+                                    <td valign="top">
+                                        <span class="style1">
+                                            {{ order['shipping_address'] }}
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div align="center" class="style4">
+                            <input style="display: none;" id="barcodeValue" type="text" name="value" value="{{ order['cep'] }}" />
+                            <img id="barcodeImage" />
+                        </div>
+                        <hr align="center" width="100%" color="silver" size="1" />
+                        <div class="style2">
+                            <b>Remetente:</b><br /> 
+                            <span class="transforme">
+								{{ order['store_name'] }}<br />
+                                {{ order['telefone-loja'] }}<br /> 
+								{{ order['endereco-loja'] }}
+                            </span>
+                        </div>		  
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% endfor %}
+        <div class="right">
+            <p align="center">
+                <a href="javascript:Imprimir('print');"/><button class="bot">Imprimir</button></a>
+            </p>
+        </div>		
+	</div>
+		</div>
+    </body>
+</html>
+

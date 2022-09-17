@@ -1,0 +1,48 @@
+@media screen and (max-width: 993px) {
+	#nav-menu {
+		display: none;
+	}
+
+	#cart-right{
+		width:100%;
+	}
+
+	#nav-menu{
+		position: fixed;
+		width: 100%;
+		top: -500px;
+		left: 0;
+		z-index: 999;
+		display: none;
+		visibility: hidden;
+		transition: 0.2s all ease-in-out;
+		background: #FFF;
+	}
+
+	#nav-menu.menuMobile {
+		display: block;
+		visibility: visible;
+		top: 0;
+	}
+
+	#nav-menu.menuMobile li a {
+		color: #999 !important;
+		padding: 13px 16px !important;
+	}
+	
+	#nav-menu.menuMobile li:hover a {
+		color: #37adef !important;
+	}
+	
+	#nav-menu.menuMobile li:hover .dropdown-menu {
+		display: none !important;
+	}
+
+	.breadcrumb{
+		justify-content: center;
+	}
+
+	.list-categories{
+		text-align: center;
+	}
+}
