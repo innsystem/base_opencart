@@ -2843,7 +2843,7 @@ CREATE TABLE `oc_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
-('2', '2', 'desenvolvedor', 'd6b05b8bb99cc38c9d12dbae5f38d748c29564a8', 'PwiLKqQDP', 'Leonardo', 'Desenvolvedor', 'contato@innsystem.com.br', 'catalog/avatares/10.png', '', '177.82.115.70', '1', '2019-09-30 16:16:18');
+('2', '2', 'desenvolvedor', '2dfbae6989c2bdaba2afa1307c5634dd734afa89', 'PwiLKqQDP', 'Leonardo', 'Desenvolvedor', 'contato@innsystem.com.br', 'catalog/avatares/10.png', '', '177.82.115.70', '1', '2019-09-30 16:16:18');
 
 
 -----------------------------------------------------------
