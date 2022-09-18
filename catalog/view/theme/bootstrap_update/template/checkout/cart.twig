@@ -178,6 +178,17 @@
                     <h2>Resumo do Carrinho</h2>
                   </div>
 
+                  {% if modules %}
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      {% for module in modules %}
+                      {{ module }}
+                      {% endfor %}
+                    </div>
+                  </div>
+                  {% endif %}
+                  
+
                   <ul class="list-group list-group-flush mb-3 border">
                     {% for total in totals %}
                     <li class="list-group-item"><b>{{ total.title }}:</b> <span class="text-thema text-right">{{
@@ -198,18 +209,6 @@
                       <a href="{{ home }}" class="text-muted mt-3"><i class="fa fa-reply"></i> Continuar
                         comprando</a>
                   </div>
-
-                  <hr>
-
-                  {% if modules %}
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      {% for module in modules %}
-                      {{ module }}
-                      {% endfor %}
-                    </div>
-                  </div>
-                  {% endif %}
 
                 </div><!-- card-info -->
               </div><!-- end col -->
