@@ -7,15 +7,15 @@
   </ul>
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
     {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
     {% else %}
-    {% set class = 'col-sm-12' %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <div class="heading-page">
-        <h1 class="title">{{ heading_title }}</h1>
+      <div class="heading-page border-bottom pb-1 mb-3">
+        <h1 class="display-6">{{ heading_title }}</h1>
       </div>
       <form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset>
@@ -41,10 +41,10 @@
           </div>
         </fieldset>
         <div class="buttons clearfix">
-          <div class="pull-left"><a href="{{ back }}" class="btn btn-default">{{ button_back }}</a></div>
           <div class="pull-right">
             <input type="submit" value="{{ button_continue }}" class="btn btn-primary" />
           </div>
+          <div class="pull-left"><a href="{{ back }}" class="btn btn-default">{{ button_back }}</a></div>
         </div>
       </form>
       {{ content_bottom }}</div>

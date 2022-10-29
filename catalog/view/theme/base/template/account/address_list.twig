@@ -13,15 +13,15 @@
   {% endif %}
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
     {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
     {% else %}
-    {% set class = 'col-sm-12' %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <div class="heading-page">
-        <h1 class="title">{{ text_address_book }}</h1>
+      <div class="heading-page border-bottom pb-1 mb-3">
+        <h1 class="display-6">{{ text_address_book }}</h1>
       </div>
       {% if addresses %}
       <div class="table-responsive">
@@ -41,8 +41,8 @@
       <p>{{ text_empty }}</p>
       {% endif %}
       <div class="buttons clearfix">
+        <div class="pull-right"><a href="{{ add }}" class="btn btn-success">{{ button_new_address }}</a></div>
         <div class="pull-left"><a href="{{ back }}" class="btn btn-default">{{ button_back }}</a></div>
-        <div class="pull-right"><a href="{{ add }}" class="btn btn-primary">{{ button_new_address }}</a></div>
       </div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>

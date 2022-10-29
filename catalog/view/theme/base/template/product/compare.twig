@@ -7,20 +7,20 @@
   </ul>
   {% if success %}
   <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
   </div>
   {% endif %}
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
     {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
     {% else %}
-    {% set class = 'col-sm-12' %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <div class="heading-page">
-        <h1 class="title">{{ heading_title }}</h1>
+      <div class="heading-page border-bottom pb-1 mb-3">
+        <h1 class="display-6">{{ heading_title }}</h1>
       </div>
       {% if products %}
       <table class="table table-bordered">
@@ -38,7 +38,7 @@
           <tr>
             <td>{{ text_image }}</td>
             {% for product in products %}
-            <td class="text-center">{% if product.thumb %} <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /> {% endif %}</td>
+            <td class="text-center">{% if product.thumb %} <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-fluid" /> {% endif %}</td>
             {% endfor %} </tr>
           <tr>
             <td>{{ text_price }}</td>

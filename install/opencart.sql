@@ -2572,7 +2572,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'theme_default', 'theme_default_image_cart_width', '47', 0),
 (0, 'theme_default', 'theme_default_image_location_height', '50', 0),
 (0, 'theme_default', 'theme_default_image_location_width', '268', 0),
-(0, 'theme_default', 'theme_default_directory', 'bootstrap_update', 0),
+(0, 'theme_default', 'theme_default_directory', 'base', 0),
 (0, 'theme_default', 'theme_default_status', '1', 0),
 (0, 'dashboard_activity', 'dashboard_activity_status', '1', 0),
 (0, 'dashboard_activity', 'dashboard_activity_sort_order', '6', 0),
@@ -2843,7 +2843,7 @@ CREATE TABLE `oc_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
-('2', '2', 'desenvolvedor', '2dfbae6989c2bdaba2afa1307c5634dd734afa89', 'PwiLKqQDP', 'Leonardo', 'Desenvolvedor', 'contato@innsystem.com.br', 'catalog/avatares/10.png', '', '177.82.115.70', '1', '2019-09-30 16:16:18');
+('2', '2', 'desenvolvedor', 'cc59535258ba057d8acd50cea3ee56eb220cd29e', 'PwiLKqQDP', 'Leonardo', 'Desenvolvedor', 'contato@innsystem.com.br', 'catalog/avatares/10.png', '', '177.82.115.70', '1', '2019-09-30 16:16:18');
 
 
 -----------------------------------------------------------

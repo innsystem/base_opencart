@@ -7,15 +7,15 @@
   </ul>
   <div class="row">{{ column_left }}
     {% if column_left and column_right %}
-    {% set class = 'col-sm-6' %}
+    {% set class = 'col-12 col-sm-12 col-md-6' %}
     {% elseif column_left or column_right %}
-    {% set class = 'col-sm-9' %}
+    {% set class = 'col-12 col-sm-12 col-md-9' %}
     {% else %}
-    {% set class = 'col-sm-12' %}
+    {% set class = 'col-12 col-sm-12 col-md-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <div class="heading-page">
-        <h1 class="title">{{ heading_title }}</h1>
+      <div class="heading-page border-bottom pb-1 mb-3">
+        <h1 class="display-6">{{ heading_title }}</h1>
       </div>
       <p>{{ text_total }} <b>{{ total }}</b>.</p>
       <div class="table-responsive">
@@ -49,8 +49,8 @@
         </table>
       </div>
       <div class="row">
-        <div class="col-sm-6 text-left">{{ pagination }}</div>
-        <div class="col-sm-6 text-right">{{ results }}</div>
+        <div class="col-12 col-sm-12 col-md-6 text-left">{{ pagination }}</div>
+        <div class="col-12 col-sm-12 col-md-6 text-right">{{ results }}</div>
       </div>
       <div class="buttons clearfix">
         <div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>

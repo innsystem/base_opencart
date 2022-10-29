@@ -221,7 +221,6 @@ class ControllerProductProduct extends Controller
 			$this->document->setKeywords($product_info['meta_keyword']);
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
 
-
 			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment/moment.min.js', 'footer');
 			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js', 'footer');
 			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js', 'footer');
@@ -231,13 +230,12 @@ class ControllerProductProduct extends Controller
 			$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.js', 'footer');
 			$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.thumbs.js?1', 'footer');
 
-			$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/swiper.min.css');
-			$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/opencart.css');
-			$this->document->addScript('catalog/view/javascript/jquery/swiper/js/swiper.jquery.js', 'footer');
+			$this->document->addStyle('catalog/view/javascript/swiperjs/swiper-bundle.min.css?1');
+			$this->document->addScript('catalog/view/javascript/swiperjs/swiper-bundle.min.js?1',);
 
 			$this->document->addStyle('catalog/view/javascript/fancybox/css/jquery.fancybox-plus.css');
 			$this->document->addScript('catalog/view/javascript/fancybox/js/jquery.fancybox-plus.js?2', 'footer');
-			
+
 			// add url image product to head
 			$imgProd = $product_info['image'];
 			$imgOld = $imgProd;

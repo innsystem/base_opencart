@@ -1,43 +1,73 @@
 {% if categories %}
-<nav id="menu" class="navbar">
-  <div class="container">
-    <!-- 
-    <div class="navbar-header"><span id="category" class="visible-xs">{{ text_category }}</span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
-    collapse
-  -->
-  <div class="navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      {% for category in categories %}
-      {% if category.children %}
-      <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }} <span class="openMenu d-inline-block d-sm-inline-block d-md-none"><i class="fa fa-angle-down"></i></span></a>
-        <div class="dropdown-menu">
-          <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
-            <ul class="list-unstyled">
+<div id="open-menu" class="me-lg-auto">
+  <a href="javascript:;" class="openMenuMobile text-white"><i class="fa fa-bars"></i></a>
+</div>
+<ul id="nav-menu" class="nav col-12 col-lg-auto me-lg-auto mb-2 pb-3 pb-md-0 justify-content-center mb-md-0">
+  <li class="nav-menu-title p-4 border-bottom text-center h5 text-dark"><span>Menu de Categorias</span> <a
+      href="javascript:;" class="openMenuMobile"><i class="fa fa-times"></i></a></li>
+  {% for category in categories %}
+  {% if category.children %}
+  <li class="dropdown">
+    <a href="{{ category.href }}" class="nav-link px-2 text-white">
+      {{ category.name }} <span class="openMenu"><i class="fas fa-angle-down"></i></span>
+    </a>
+    <div class="dropdown-menu">
+      <div class="dropdown-inner">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 py-3 text-center">
+            <h4>Sub Departamentos</h4>
+            {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+            <ul class="list-unstyled p-3">
               {% for child in children %}
-              <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+              <li class="mb-2"><a href="{{ child.href }}">{{ child.name }}</a></li>
               {% endfor %}
             </ul>
-            {% endfor %}</div>
-            <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a> </div>
-          </li>
-          {% else %}
-          <li><a href="{{ category.href }}">{{ category.name }}</a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-
-        <hr class="visible-xs visible-sm invisible clearfix">
-
-        <p class="visible-xs visible-sm"><b>Links Rápidos</b></p>
-
-        <ul class="visible-xs visible-sm nav navbar-nav">
-          <li><a href="index.php?route=account/account">Minha Conta</a></li>
-          <li><a href="index.php?route=account/wishlist">Meus Favoritos</a></li>
-          <li><a href="index.php?route=checkout/checkout">Finalizar Pedido</a></li>
-        </ul>
-      </div>
+            {% endfor %}
+          </div><!-- col-sm -->
+          <div class="col-sm-12 col-md-8">
+            {{ category.description }}
+          </div>
+        </div><!-- row -->
+      </div><!-- dropdown-inner -->
     </div>
-  </nav>
-  {% endif %} 
+    <!--dropdown-menu -->
+  </li>
+  {% else %}
+  <li><a href="{{ category.href }}" class="nav-link px-2 text-white ">{{ category.name }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
+<script>
+  if ($(window).width() > 1060) {
+    $(function () {
+      $("#nav-menu").hover(
+        function () {
+          //Ao posicionar o cursor sobre a div
+          setTimeout(function () {
+            $('body').addClass('body-overlay');
+          }, 200);
+        },
+        function () {
+          //Ao remover o cursor da div
+          setTimeout(function () {
+            $('body').removeClass('body-overlay');
+          }, 200);
+        }
+      );
+    });
+  }
+
+  $(".openMenuMobile").click(function (e) {
+    e.preventDefault();
+
+    setTimeout(function () {
+      $("body").toggleClass('body-overlay');
+    }, 100);
+
+    setTimeout(function () {
+      $("#nav-menu").toggleClass('menuMobile');
+    }, 100);
+
+  });
+</script>

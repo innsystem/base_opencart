@@ -1,6 +1,21 @@
-<div id="search" class="input-group">
-  <input type="text" name="search" value="{{ search }}" placeholder="{{ text_search }}" class="form-control input-lg" />
-  <span class="input-group-btn">
-    <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
-  </span>
+<div id="open-search" class="me-lg-auto">
+  <a href="javascript:;" class="openSearchMobile text-white"><i class="fa fa-search"></i></a>
 </div>
+<div id="search" class="" role="search">
+  <div class="d-flex">
+    <input type="search" name="search"  class="form-control" value="{{ search }}" placeholder="{{ text_search }}" 
+    aria-label="{{ text_search }}">
+    <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+
+<script>  
+  $(".openSearchMobile").click(function (e) {
+    e.preventDefault();
+
+    setTimeout(function () {
+      $("#search").toggleClass('searchOpen');
+    }, 100);
+
+  });
+</script>

@@ -5,6 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html dir="{{ direction }}" lang="{{ lang }}">
 <!--<![endif]-->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +18,8 @@
   <meta name="language" content="pt-br" />
   <meta name="revisit-after" content="3 days">
   <meta name="rating" content="general" />
-  <meta property="og:locale" content="pt_BR"/>
-  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
   {% if fbMetas %}
   {% for fbMeta in fbMetas %}
   <meta property="og:image:url" content="{{ base }}image/{{ fbMeta.content }}" />
@@ -31,248 +32,108 @@
 
   {% if description %}
   <meta name="description" content="{{ description }}" />
-  <meta property="og:description" content="{{ description }}"/>
+  <meta property="og:description" content="{{ description }}" />
   {% endif %}
   <!-- // end: add url image product to head -->
   {% if keywords %}
   <meta name="keywords" content="{{ keywords }}" />
   {% endif %}
-  <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
-  <script src="https://kit.fontawesome.com/04571ab3d2.js" crossorigin="anonymous"></script>
-  <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-  <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-  <link href="catalog/view/theme/{{ theme }}/stylesheet/stylesheet.css?1" rel="stylesheet">
-  <link href="catalog/view/theme/{{ theme }}/stylesheet/custom.css?1" rel="stylesheet">
-  <link href="catalog/view/theme/{{ theme }}/stylesheet/responsive.css?1" rel="stylesheet">
+
+  <!-- include Boostrap v5.2 -->
+  <link href="catalog/view/javascript/bootstrap_5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="catalog/view/javascript/font-awesome/5.1/css/all.min.css" rel="stylesheet" />
+  <link href="catalog/view/theme/{{ theme }}/stylesheet/template_custom.css?{{random()}}" rel="stylesheet" />
+  <link href="catalog/view/theme/{{ theme }}/stylesheet/responsive.css?{{random()}}" rel="stylesheet" />
+
   {% for style in styles %}
   <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
   {% endfor %}
+
+  <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="catalog/view/javascript/bootstrap_5/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
   {% for script in scripts %}
   <script src="{{ script }}" type="text/javascript"></script>
   {% endfor %}
-  <script src="catalog/view/javascript/common.js?1" type="text/javascript"></script>
+
   {% for link in links %}
   <link href="{{ link.href }}" rel="{{ link.rel }}" />
   {% endfor %}
+
   {% for analytic in analytics %}
   {{ analytic }}
   {% endfor %}
-
-  <script src="catalog/view/javascript/jquery/jquery.mask.js" type="text/javascript"></script>
-  <script type="text/javascript">
-  $(document).ready(function(){    
-    // $('input[name="postcode"]').mask('00000-000');
-    $("input[name='postcode']").mask('00000-000', {reverse: true, placeholder: "00000-000"});
-    $('input[name="custom_field[account][1]"]').mask('000.000.000-00', {reverse: true});
-    $('input[name="telephone"]').mask("(99) 99999-9999");
-    $('input[name="telephone"]').on("blur", function() {
-      var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
-
-      if( last.length == 3 ) {
-        var move = $(this).val().substr( $(this).val().indexOf("-") - 1, 1 );
-        var lastfour = move + last;
-        var first = $(this).val().substr( 0, 9 );
-
-        $(this).val( first + '-' + lastfour );
-      }
-    });
-  });
-  </script>
-
 </head>
+
 <body class="{{ class }}">
-  <div class="header-desktop">
-    <header id="headerDesktop">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
-              <h1><a href="{{ home }}">{{ name }}</a></h1>
-              {% endif %}</div>
-            </div>
-            <div class="col-sm-9">
-              <div class="row secondMenu">
-                <div class="col-sm-4">{{ search }}</div><!-- col-5 -->
-                <div class="col-sm-8">
-                  <div class="linkHeaders">
-                    <ul class="d-flex">
-                      <li id="center-help" class="flex-fill">
-                        <a href="javascript:;">
-                          <div class="icon">
-                            <i class="fa fa-comments"></i>
-                          </div>
-                          <div class="content">
-                            <p>Central de <br><b>Atendimento</b> <i class="fa fa-angle-down"></i></p>
-                          </div>
-                        </a>
-                        <div class="sub-menu">
-                          <ul>
-                            <li>
-                              <div><i class="fab fa-whatsapp"></i> <b>Telefone</b></div>
-                              <span><a href="https://wa.me/55{{ telephoneLink }}">{{ telephone }}</a></span>
-                            </li>
-                            {% if cellphone %}
-                            <li>
-                              <div><i class="fa fa-phone"></i> <b>Celular</b></div>
-                              <span><a href="https://wa.me/55{{ cellphoneLink }}">{{ cellphone }}</a></span>
-                            </li>
-                            {% endif %}
-                            <li class="e-mail">
-                              <div><i class="fa fa-comment"></i> <b>Atendimento E-mail</b></div>
-                              <span><a href="mailto:{{ email_admin }}">{{ email_admin }}</a></span>
-                            </li>
-                            {% if hour_open %}
-                            <li>
-                              <div><i class="fas fa-clock"></i> <b>Horário de Atendimento</b></div>
-                              <p>{{ hour_open|replace({ '/space/': '<br>' }) }}</p>
-                            </li>
-                            {% endif %}
-                          </ul>
-                        </div>
-                      </li><!-- end central de atendimento -->
+  <header id="desktop" class="text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <div id="logo" class="d-flex align-items-center me-3 mb-2 mb-lg-0 text-white text-decoration-none">
+          {% if logo %}
+          <a href="{{ home }}">
+            <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid" />
+          </a>
+          {% else %}
+          <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
+        </div><!-- end #logo -->
 
-                      <li id="center-user" class="flex-fill">
-                        <a href="{{ account }}">
-                          <div class="icon">
-                            <i class="fa fa-user"></i>
-                          </div>
-                          <div class="content">
-                            {% if not logged %}
-                            <p>Entrar ou <br><b>Cadastrar</b> <i class="fa fa-angle-down"></i></p>
-                            {% else %}
-                            <p>Bem-vindo, <br><b>{{ name_user|length > 10 ? name_user|slice(0, 10) ~ '.' : name_user  }}</b> <i class="fa fa-angle-down"></i></p>
-                            {% endif %}
-                          </div>
-                        </a>
-                        <div class="sub-menu">
-                          <div class="d-flex">
-                            <div class="col-sm-6 flex-fill">
-                              <div class="text-center">
-                                <div class="icon"><i class="fa fa-user"></i></div>
-                                <div class="content">
-                                  {% if logged %}
-                                  <h4>Olá, <br> <b>{{ name_user }}</b></h4>
-                                  {% else %}
-                                  <h4>Olá, <br> <b>Bem-vindo!</b></h4>
-                                  <a href="{{ account }}" class="btn btn-sm btn-primary">Minha Conta</a>
-                                  {% endif %}
-                                </div>
-                              </div>
-                            </div><!-- flex-fill -->
-                            <div class="col-sm-6 flex-fill">
-                              <ul>
-                                {% if logged %}
-                                <li><a href="{{ account }}">{{ text_account }}</a></li>
-                                <li><a href="{{ order }}">{{ text_order }}</a></li>
-                                <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
-                                <li><a href="{{ logout }}">{{ text_logout }}</a></li>
-                                {% else %}
-                                <li><a href="{{ login }}"><i class="fa fa-user"></i> {{ text_login }}</a></li>
-                                <li><a href="{{ register }}"><i class="fa fa-plus"></i> {{ text_register }}</a></li>
-                                {% endif %}
-                                <li><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><i class="fa fa-heart"></i> <span>{{ text_wishlist }}</span></a></li>
-                                <li class="divider"></li>
-                                <li><i class="fa fa-truck"></i> <b>Rastrear Pedido</b>
-                                  <form method="post" action="https://www.linkcorreios.com.br/?" id="rastrearobjeto" name="rastrearobjeto">
-                                    <input type="text" name="codrastreio" id="codrastreio" value="" placeholder="OJ614509055BR" class="form-control">
-                                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                                  </form>
-                                </li>
-                              </ul>
+        {{ menu }}
 
-                            </div><!-- flex-fill -->
-                          </div>
-                        </div>
-                      </li><!-- end central do usuário -->                      
-                      {{ cart }}
-                    </ul>
-                  </div><!-- linksHeaders -->                  
-                </div><!-- col-7 -->
-              </div><!-- row -->
-            </div><!-- col -->
-          </div><!-- row -->
-        </div><!-- container -->
-      </header>
-      {{ menu }}     
-    </div><!-- header-desktop -->
 
-    <div class="header-mobile">
-      <nav id="top" class="mobile-top">
-        <div class="container">
-          <div class="d-flex">
-            <div class="">
-              <a href="javascript:history.go(-1);" class="btn ml-3"><i class="fa fa-angle-left"></i></a>
-            </div>            
-            <div class="">
-              <a href="index.php?route=account/account" class="btn"><i class="fa fa-user"></i></a>
-            </div>
-            <div class="">
-              {{ cart }}
-            </div>
-            <div class="">
-              <a href="javascript:;" class="btn btnToggleSearch"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="ml-auto">
-              <a href="javascript:;" class="btn btnToggleMenu mr-3"><i class="fa fa-bars"></i></a>
-            </div>
-          </div>
+        {{ search }}
+
+        <div class="header-account">
+          {% if logged %}
+          <a href="{{ account }}" class="btn btn-outline-light me-2"><span class="d-none d-sm-none d-md-block">{{
+              text_account }}</span><span class="d-md-none"><i class="fa fa-user"></i></span></a>
+          <a href="{{ logout }}" class="text-white"><i class="fas fa-sign-out-alt"></i></a>
+          {% else %}
+          <a href="{{ login }}" class="text-white"><i class="fa fa-user"></i></a>
+          {% endif %}
         </div>
-      </nav>
-      <header id="headerMobile">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
-                <h1><a href="{{ home }}">{{ name }}</a></h1>
-                {% endif %}</div>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="box-search hide">
-              {{ search }}
-            </div>
-          </div>
-        </header>
 
-        <div class="menu-mobile">
-          <a href="javascript:;" class="btnCloseToggleMenu"><i class="fa fa-times"></i></a>
-          {{ menu }}
-        </div>
-      </div><!-- header-mobile -->
-      
-
-      {% if bfloat_status  %}
-      <div class="headerbuttonsfloat">
-        <ul>
-          <li><a href="javascript:;" data-toggle="tooltip" data-placement="right" title="Entre em Contato"><i class="fa fa-comments"></i></a>
-            <ul>
-              {% if bfloat_whatsapp %}
-              <li><a href="https://wa.me/55{{ bfloat_whatsapp }}" target="_Blank" class="whatsapp" data-toggle="tooltip" data-placement="right" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
-              {% endif %}
-
-              {% if bfloat_facebook %}
-              <li><a href="https://facebook.com/{{ bfloat_facebook }}" target="_Blank" class="facebook" data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-              {% endif %}
-
-              {% if bfloat_messenger %}
-              <li><a href="https://m.me/{{ bfloat_messenger }}" target="_Blank" class="facebook-messenger" data-toggle="tooltip" data-placement="right" title="Messenger"><i class="fab fa-facebook-messenger"></i></a></li>
-              {% endif %}
-
-              {% if bfloat_instagram %}
-              <li><a href="https://instagram.com/{{ bfloat_instagram }}" target="_Blank" class="instagram" data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-              {% endif %}
-
-              {% if bfloat_mail %}
-              <li><a href="mailto:{{ bfloat_mail }}" class="comment" data-toggle="tooltip" data-placement="right" title="E-mail"><i class="fa fa-comment"></i></a></li>
-              {% endif %}
-            </ul>
-          </li>
-        </ul>
+        {{ cart }}
       </div>
-      {% endif %}
+    </div>
+  </header>
 
-      <main class="content_geral">
+  {% if bfloat_status %}
+  <div class="headerbuttonsfloat d-none">
+    <ul>
+      <li><a href="javascript:;" data-toggle="tooltip" data-placement="right" title="Entre em Contato"><i
+            class="fa fa-comments"></i></a>
+        <ul>
+          {% if bfloat_whatsapp %}
+          <li><a href="https://wa.me/55{{ bfloat_whatsapp }}" target="_Blank" class="whatsapp" data-toggle="tooltip"
+              data-placement="right" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_facebook %}
+          <li><a href="https://facebook.com/{{ bfloat_facebook }}" target="_Blank" class="facebook"
+              data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_messenger %}
+          <li><a href="https://m.me/{{ bfloat_messenger }}" target="_Blank" class="facebook-messenger"
+              data-toggle="tooltip" data-placement="right" title="Messenger"><i
+                class="fab fa-facebook-messenger"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_instagram %}
+          <li><a href="https://instagram.com/{{ bfloat_instagram }}" target="_Blank" class="instagram"
+              data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          {% endif %}
+
+          {% if bfloat_mail %}
+          <li><a href="mailto:{{ bfloat_mail }}" class="comment" data-toggle="tooltip" data-placement="right"
+              title="E-mail"><i class="fa fa-comment"></i></a></li>
+          {% endif %}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  {% endif %}
+
+  <main class="content_geral">
